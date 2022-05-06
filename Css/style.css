@@ -1,0 +1,460 @@
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(105, 126, 145);
+  border: 0.1rem solid black;
+}
+
+.ubicacion {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.elementos_footer {
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: space-around;
+}
+
+.elementos_footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.descripcion__sitio {
+  text-align: center;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.titulo__seccion {
+  color: white;
+  background-color: rgb(236, 46, 46);
+  margin: 1rem 1rem 1rem 15rem;
+  border: 0.3rem solid black;
+  padding: 0.4rem;
+  width: 30rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 200%;
+}
+
+.redesSociales {
+  display: grid;
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-content: flex-end;
+  justify-items: center;
+  margin: 1rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.buscado {
+  display: flex;
+  justify-content: center;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: rgba(75, 69, 69, 0.281);
+}
+
+.beneficios {
+  display: grid;
+  border-radius: 1rem;
+  border-color: black;
+  background-color: rgb(187, 143, 89);
+  justify-content: center;
+}
+
+.listabeneficios {
+  display: grid;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
+.div_ingreso {
+  display: flex;
+  justify-content: end;
+}
+
+.ingreso {
+  color: white;
+  background-color: rgb(10, 9, 9);
+  border-radius: 0.5rem;
+  border-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.seccionesVenta {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 120%;
+  display: flex;
+  justify-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.articulos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+}
+.articulos img {
+  border: solid;
+}
+
+#grad {
+  background-image: linear-gradient(to left, rgb(233, 220, 186), rgb(243, 216, 205));
+}
+
+#grad2 {
+  background-image: linear-gradient(to right, rgb(202, 235, 198), rgb(216, 227, 247));
+}
+
+section p span {
+  border: 0.1rem solid black;
+  background-color: rgb(205, 213, 219);
+  padding: 0.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2rem;
+}
+
+.barraLateral {
+  display: grid;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(202, 199, 199);
+  border: 0.3rem solid black;
+  margin: 0rem 3rem 7rem auto;
+  padding: 0.2rem;
+}
+.barraLateral li {
+  justify-content: center;
+  font-size: 130%;
+  padding: 1rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(31, 29, 29);
+  justify-content: center;
+}
+.formulario label {
+  color: white;
+}
+.formulario div {
+  color: rgb(236, 206, 165);
+}
+
+legend {
+  color: white;
+  border: 0.2rem solid rgb(57, 150, 153);
+  background-color: rgb(8, 8, 8);
+  align-self: center;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#estilo_articulos:hover {
+  transform: scale(110%);
+}
+
+#estilo_articulos2:hover {
+  transform: scale(110%);
+}
+
+.linea2Encabezado {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+@media screen and (max-width: 740px) {
+  * {
+    max-width: 50vh;
+  }
+
+  .descripcion__sitio {
+    text-align: center;
+    font-size: 80%;
+  }
+
+  .titulo__seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: flex-end;
+    align-self: flex-end;
+    align-content: flex-end;
+    margin: 0.2rem;
+    max-width: 90%;
+  }
+
+  .titulo__seccion p {
+    color: white;
+    background-color: rgb(236, 46, 46);
+    padding: 1rem;
+    padding: 0.1rem;
+    margin: 0;
+    font-size: 60%;
+  }
+
+  .redesSociales {
+    display: flex;
+    font-size: 90%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  header div a img {
+    max-height: 40%;
+  }
+
+  .linea2 {
+    display: flex;
+  }
+
+  .articulos div {
+    border: solid;
+    background-color: rgb(165, 187, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0.1rem;
+  }
+  .articulos div img {
+    max-width: 60%;
+    max-height: 60%;
+    align-self: center;
+  }
+
+  .articulos #estilo_articulos2 {
+    border: solid;
+    background-image: linear-gradient(to left, rgb(149, 240, 149), rgba(144, 206, 247, 0.637));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0.1rem;
+  }
+  .articulos #estilo_articulos2 img {
+    max-width: 60%;
+    max-height: 60%;
+    align-self: center;
+  }
+
+  .corto {
+    border: solid;
+  }
+
+  .buzo {
+    border: solid;
+  }
+
+  .chomba {
+    border: solid;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .logo img {
+    max-width: 80%;
+  }
+
+  footer {
+    background-color: rgb(105, 126, 145);
+  }
+
+  .buscado {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buscado img {
+    max-height: 50%;
+  }
+
+  .buscador {
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: rgba(75, 69, 69, 0.281);
+    max-height: 50%;
+    max-width: 40%;
+  }
+
+  .beneficios {
+    display: grid;
+    border-radius: 1rem;
+    border-color: black;
+    background-color: rgb(187, 143, 89);
+    justify-content: center;
+  }
+
+  .listabeneficios {
+    display: grid;
+    justify-content: center;
+    grid-gap: 2rem;
+  }
+
+  .div_ingreso {
+    display: flex;
+    justify-content: end;
+  }
+
+  .ingreso {
+    color: rgb(223, 116, 116);
+    border-radius: 0.5rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 0;
+  }
+
+  .seccionesVenta {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 80%;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .seccionesVenta a {
+    text-decoration: none;
+    color: rgb(235, 63, 63);
+  }
+
+  .articulos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articulos img {
+    max-width: 60%;
+    max-height: 60%;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  section p {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .barraLateral {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    background: linear-gradient(0.25turn, #c0bab8, #f6faf4, #f3504a);
+    border: 0.3rem solid black;
+    margin: 2rem;
+    padding: 0;
+  }
+
+  .barraLateral li {
+    justify-content: center;
+    font-size: 80%;
+    padding: 0.5rem;
+    align-self: center;
+  }
+
+  .barraLateral:hover {
+    transform: scale(120%);
+  }
+
+  .linea2Encabezado {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  footer {
+    padding: 0;
+    margin: 1rem;
+    display: flex;
+    border: 0.1rem solid black;
+  }
+
+  .ubicacion {
+    font-weight: bold;
+    font-size: 130%;
+    padding: 0;
+  }
+
+  #grad {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #grad2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* contacto*/
+  .section_contacto {
+    display: flex;
+    padding: 1rem;
+  }
+  .section_contacto a {
+    padding-left: 2rem;
+    color: rgb(236, 46, 46);
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 29, 29);
+    justify-content: center;
+  }
+  .formulario label {
+    color: rgb(252, 250, 247);
+  }
+  .formulario legend {
+    color: white;
+    border: 0.2rem solid rgb(57, 150, 153);
+    background-color: rgb(8, 8, 8);
+    align-self: center;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .formulario div {
+    color: rgb(236, 206, 165);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
