@@ -47,12 +47,14 @@
 }
 .beneficios {
   display: grid;
-  margin: 3rem 10rem;
-  height: 33rem;
+  margin: auto;
+  height: 40rem;
+  width: 40rem;
   border-radius: 1rem;
   border-color: black;
   background-color: rgb(252, 143, 41);
   justify-content: center;
+
   img {
     justify-content: center;
     padding: 1rem;
@@ -108,9 +110,10 @@
 #grad {
   background-image: linear-gradient(
     to left,
-    rgb(233, 220, 186),
-    rgb(243, 216, 205)
+    rgb(248, 200, 224),
+    rgb(248, 228, 190)
   );
+  margin: 1rem;
 }
 #grad2 {
   background-image: linear-gradient(
@@ -138,6 +141,7 @@ nav {
     font-size: x-large;
     font-weight: bold;
     color: $colorUno;
+    text-decoration: none;
   }
 }
 .barraLateral {
@@ -147,6 +151,7 @@ nav {
   justify-content: space-evenly;
   background-color: rgb(202, 199, 199);
   border: 0.3rem solid black;
+  border-radius: 1rem;
   margin: 0rem 3rem 7rem auto;
   padding: 0.2rem;
   li {
@@ -155,18 +160,29 @@ nav {
     padding: 1rem;
   }
 }
-form {
+/*contacto*/
+.nav_contacto {
   display: flex;
   justify-content: center;
-  margin: 2rem;
-  width: 70rem;
-  height: 30rem;
+  margin: 1rem;
+  a {
+    text-decoration: none;
+    font-size: x-large;
+    color: $colorUno;
+    font-weight: bold;
+  }
+}
+form {
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 .formulario {
   display: flex;
   flex-direction: column;
   background-color: rgb(31, 29, 29);
   justify-content: center;
+  width: 30rem;
   label {
     color: white;
   }

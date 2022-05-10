@@ -77,8 +77,9 @@ footer {
 
 .beneficios {
   display: grid;
-  margin: 3rem 10rem;
-  height: 33rem;
+  margin: auto;
+  height: 40rem;
+  width: 40rem;
   border-radius: 1rem;
   border-color: black;
   background-color: rgb(252, 143, 41);
@@ -140,7 +141,8 @@ footer {
 }
 
 #grad {
-  background-image: linear-gradient(to left, rgb(233, 220, 186), rgb(243, 216, 205));
+  background-image: linear-gradient(to left, rgb(248, 200, 224), rgb(248, 228, 190));
+  margin: 1rem;
 }
 
 #grad2 {
@@ -168,6 +170,7 @@ nav {
   font-size: x-large;
   font-weight: bold;
   color: rgb(236, 46, 46);
+  text-decoration: none;
 }
 
 .barraLateral {
@@ -177,6 +180,7 @@ nav {
   justify-content: space-evenly;
   background-color: rgb(202, 199, 199);
   border: 0.3rem solid black;
+  border-radius: 1rem;
   margin: 0rem 3rem 7rem auto;
   padding: 0.2rem;
 }
@@ -186,12 +190,23 @@ nav {
   padding: 1rem;
 }
 
-form {
+/*contacto*/
+.nav_contacto {
   display: flex;
   justify-content: center;
-  margin: 2rem;
-  width: 70rem;
-  height: 30rem;
+  margin: 1rem;
+}
+.nav_contacto a {
+  text-decoration: none;
+  font-size: x-large;
+  color: rgb(236, 46, 46);
+  font-weight: bold;
+}
+
+form {
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 .formulario {
@@ -199,6 +214,7 @@ form {
   flex-direction: column;
   background-color: rgb(31, 29, 29);
   justify-content: center;
+  width: 30rem;
 }
 .formulario label {
   color: white;
@@ -350,14 +366,6 @@ legend {
     max-width: 40%;
   }
 
-  .beneficios {
-    display: grid;
-    border-radius: 1rem;
-    border-color: black;
-    background-color: rgb(187, 143, 89);
-    justify-content: center;
-  }
-
   .listabeneficios {
     display: grid;
     justify-content: center;
@@ -462,11 +470,11 @@ legend {
   }
 
   /* contacto*/
-  .section_contacto {
+  .nav_contacto {
     display: flex;
     padding: 1rem;
   }
-  .section_contacto a {
+  .nav_contacto a {
     padding-left: 2rem;
     color: rgb(236, 46, 46);
   }
@@ -490,6 +498,38 @@ legend {
   }
   .formulario div {
     color: rgb(236, 206, 165);
+  }
+
+  /*tarjeta*/
+  .nav_tarjeta a {
+    font-size: 80%;
+  }
+
+  .beneficios {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 30rem;
+    justify-content: space-between;
+    background-color: rgb(252, 143, 41);
+    justify-content: center;
+    margin: auto;
+  }
+  .beneficios img {
+    display: none;
+  }
+  .beneficios h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .beneficios ul {
+    font-size: 80%;
+  }
+  .beneficios button {
+    align-self: center;
+    margin: 20px;
+    font-size: 70%;
+    width: 50%;
   }
 }
 
