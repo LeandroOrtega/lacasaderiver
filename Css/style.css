@@ -30,6 +30,44 @@ footer {
   color: black;
 }
 
+.beneficios {
+  display: grid;
+  margin: auto;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  border-color: black;
+  background-color: rgba(184, 218, 250, 0.61);
+  justify-content: center;
+}
+.beneficios img {
+  justify-content: center;
+  justify-self: center;
+  margin: 1rem;
+}
+.beneficios h1 {
+  text-align: center;
+}
+.beneficios ul {
+  display: grid;
+  grid-gap: 2rem;
+  font-weight: bold;
+}
+.beneficios button {
+  width: 9rem;
+  height: 2.5rem;
+  background-color: rgb(192, 229, 240);
+  font-size: large;
+  border-radius: 2rem;
+  justify-self: center;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
 .descripcion__sitio {
   text-align: center;
   font-size: large;
@@ -46,15 +84,6 @@ footer {
   height: 2rem;
   text-align: center;
   font-size: 200%;
-}
-
-.redesSociales {
-  display: grid;
-  font-size: larger;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  justify-content: flex-end;
-  justify-items: center;
-  margin: 1rem;
 }
 
 .logo {
@@ -75,39 +104,6 @@ footer {
   border-color: rgba(75, 69, 69, 0.281);
 }
 
-.beneficios {
-  display: grid;
-  margin: auto;
-  height: 40rem;
-  width: 40rem;
-  border-radius: 1rem;
-  border-color: black;
-  background-color: rgb(252, 143, 41);
-  justify-content: center;
-}
-.beneficios img {
-  justify-content: center;
-  padding: 1rem;
-  justify-self: center;
-}
-.beneficios h1 {
-  text-align: center;
-}
-.beneficios ul {
-  display: grid;
-  grid-gap: 2rem;
-  font-weight: bold;
-}
-.beneficios button {
-  width: 9rem;
-  height: 2.5rem;
-  background-color: rgb(192, 229, 240);
-  font-size: large;
-  border-radius: 2rem;
-  justify-self: center;
-  margin: 0;
-}
-
 .div_ingreso {
   display: flex;
   justify-content: end;
@@ -121,16 +117,6 @@ footer {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.seccionesVenta {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 120%;
-  display: flex;
-  justify-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .articulos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -141,11 +127,17 @@ footer {
 }
 
 #grad {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2rem;
   background-image: linear-gradient(to left, rgb(248, 200, 224), rgb(248, 228, 190));
   margin: 1rem;
 }
 
 #grad2 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2rem;
   background-image: linear-gradient(to right, rgb(202, 235, 198), rgb(216, 227, 247));
 }
 
@@ -154,23 +146,6 @@ section p span {
   background-color: rgb(205, 213, 219);
   padding: 0.3rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-nav {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 2rem;
-}
-
-.nav_tarjeta {
-  display: flex;
-  justify-content: center;
-}
-.nav_tarjeta a {
-  font-size: x-large;
-  font-weight: bold;
-  color: rgb(236, 46, 46);
-  text-decoration: none;
 }
 
 .barraLateral {
@@ -233,16 +208,43 @@ legend {
 }
 
 #estilo_articulos:hover {
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 #estilo_articulos2:hover {
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .linea2Encabezado {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  margin: 1rem;
+  height: 3rem;
+}
+.linea2Encabezado .redesSociales {
+  display: flex;
+  color: aliceblue;
+}
+.linea2Encabezado .redesSociales p {
+  margin-top: 1.5rem;
+}
+.linea2Encabezado .redesSociales .iconosRedes {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.linea2Encabezado .redesSociales .iconosRedes img {
+  margin-left: 1rem;
+}
+.linea2Encabezado .seccionesVenta {
+  display: flex;
+  justify-self: flex-end;
+}
+.linea2Encabezado .seccionesVenta a {
+  margin: 1.5rem;
+  color: aliceblue;
+  font-size: large;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 740px) {
