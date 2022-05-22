@@ -59,11 +59,9 @@ body {
 
 .articulos {
   display: grid;
-  height: 100%;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 2fr;
-  grid-gap: 1rem;
   margin: 1rem;
   background-image: linear-gradient(
     to left,
@@ -147,6 +145,18 @@ legend {
 }
 #estilo_articulos {
   padding: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  img {
+    max-width: 90%;
+  }
+  p {
+    align-items: center;
+    align-self: center;
+  }
 }
 #estilo_articulos:hover {
   @include transform;

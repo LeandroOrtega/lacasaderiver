@@ -256,3 +256,9 @@
     }
   }
 }
+@media screen and(min-width:741px) and (max-width: 900px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: repeat(6 2fr);
+  }
+}

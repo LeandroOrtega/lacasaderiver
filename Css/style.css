@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
 }
+.head img {
+  max-width: 100%;
+}
 
 footer {
   margin: 1rem;
@@ -123,11 +126,9 @@ body {
 
 .articulos {
   display: grid;
-  height: 100%;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 2fr;
-  grid-gap: 1rem;
   margin: 1rem;
   background-image: linear-gradient(to left, rgb(248, 200, 224), rgb(248, 228, 190));
 }
@@ -210,6 +211,18 @@ legend {
 
 #estilo_articulos {
   padding: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+}
+#estilo_articulos img {
+  max-width: 90%;
+}
+#estilo_articulos p {
+  align-items: center;
+  align-self: center;
 }
 
 #estilo_articulos:hover {
@@ -537,6 +550,12 @@ legend {
     margin: 20px;
     font-size: 70%;
     width: 50%;
+  }
+}
+@media screen and (min-width: 741px) and (max-width: 900px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: repeat(6 2fr);
   }
 }
 
