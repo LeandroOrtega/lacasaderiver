@@ -64,6 +64,7 @@ footer {
 }
 
 body {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
@@ -75,14 +76,17 @@ body {
 }
 
 .titulo__seccion {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
   color: white;
   background-color: rgb(236, 46, 46);
-  margin: 1rem 1rem 1rem 15rem;
+  margin: auto;
   border: 0.3rem solid black;
   padding: 0.4rem;
   width: 30rem;
   height: 2rem;
-  text-align: center;
   font-size: 200%;
 }
 
@@ -119,25 +123,22 @@ body {
 
 .articulos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 2fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+  background-image: linear-gradient(to left, rgb(248, 200, 224), rgb(248, 228, 190));
 }
 .articulos img {
   border: solid;
 }
 
-#grad {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 2rem;
-  background-image: linear-gradient(to left, rgb(248, 200, 224), rgb(248, 228, 190));
-  margin: 1rem;
-}
-
 #grad2 {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   background-image: linear-gradient(to right, rgb(202, 235, 198), rgb(216, 227, 247));
 }
 
@@ -161,7 +162,7 @@ section p span {
 }
 .barraLateral li {
   justify-content: center;
-  font-size: 130%;
+  font-size: 120%;
   padding: 1rem;
 }
 
@@ -207,6 +208,10 @@ legend {
   text-align: center;
 }
 
+#estilo_articulos {
+  padding: 1rem;
+}
+
 #estilo_articulos:hover {
   transform: scale(105%);
 }
@@ -215,33 +220,33 @@ legend {
   transform: scale(105%);
 }
 
-.linea2Encabezado {
+.nav {
   display: flex;
   justify-content: space-around;
   background-color: black;
   margin: 1rem;
   height: 3rem;
 }
-.linea2Encabezado .redesSociales {
+.nav .redesSociales {
   display: flex;
   color: aliceblue;
 }
-.linea2Encabezado .redesSociales p {
+.nav .redesSociales p {
   margin-top: 1.5rem;
 }
-.linea2Encabezado .redesSociales .iconosRedes {
+.nav .redesSociales .iconosRedes {
   justify-self: flex-end;
   align-self: flex-end;
 }
-.linea2Encabezado .redesSociales .iconosRedes img {
+.nav .redesSociales .iconosRedes img {
   margin-left: 1rem;
 }
-.linea2Encabezado .seccionesVenta {
+.nav .seccionNav {
   display: flex;
-  justify-self: flex-end;
+  flex-direction: row;
 }
-.linea2Encabezado .seccionesVenta a {
-  margin: 1.5rem;
+.nav .seccionNav a {
+  margin: 1rem;
   color: aliceblue;
   font-size: large;
   text-decoration: none;

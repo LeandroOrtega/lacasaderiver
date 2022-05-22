@@ -3,6 +3,7 @@
 @import "footer";
 @import "tarjeta";
 body {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
@@ -15,14 +16,17 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .titulo__seccion {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
   color: white;
   background-color: $colorUno;
-  margin: 1rem 1rem 1rem 15rem;
+  margin: auto;
   border: 0.3rem solid black;
   padding: 0.4rem;
   width: 30rem;
   height: 2rem;
-  text-align: center;
   font-size: 200%;
 }
 .logo {
@@ -55,27 +59,25 @@ body {
 
 .articulos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 2fr;
-  img {
-    border: solid;
-  }
-}
-#grad {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
+  margin: 1rem;
   background-image: linear-gradient(
     to left,
     rgb(248, 200, 224),
     rgb(248, 228, 190)
   );
-  margin: 1rem;
+  img {
+    border: solid;
+  }
 }
 #grad2 {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   background-image: linear-gradient(
     to right,
     rgb(202, 235, 198),
@@ -101,7 +103,7 @@ section p span {
   padding: 0.2rem;
   li {
     justify-content: center;
-    font-size: 130%;
+    font-size: 120%;
     padding: 1rem;
   }
 }
@@ -143,13 +145,16 @@ legend {
   border-radius: 1rem;
   text-align: center;
 }
+#estilo_articulos {
+  padding: 1rem;
+}
 #estilo_articulos:hover {
   @include transform;
 }
 #estilo_articulos2:hover {
   @include transform;
 }
-.linea2Encabezado {
+.nav {
   display: flex;
   justify-content: space-around;
   background-color: black;
@@ -169,11 +174,11 @@ legend {
       }
     }
   }
-  .seccionesVenta {
+  .seccionNav {
     display: flex;
-    justify-self: flex-end;
+    flex-direction: row;
     a {
-      margin: 1.5rem;
+      margin: 1rem;
       color: aliceblue;
       font-size: large;
       text-decoration: none;
