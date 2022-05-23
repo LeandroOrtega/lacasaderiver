@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .head {
   display: flex;
   justify-content: center;
@@ -8,29 +9,17 @@
 
 footer {
   margin: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-around;
   background-color: rgb(105, 126, 145);
   border: 0.1rem solid black;
 }
-
-.ubicacion {
+footer .ubicacion {
+  list-style: none;
+}
+footer .ubicacion .estilo_ubicacion {
+  font-size: larger;
   font-weight: bold;
-  font-size: 150%;
-}
-
-.elementos_footer {
-  display: flex;
-  align-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: space-around;
-}
-
-.elementos_footer a {
-  text-decoration: none;
-  color: black;
 }
 
 .beneficios {
@@ -136,35 +125,19 @@ body {
   border: solid;
 }
 
-#grad2 {
+.articulos_niños {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 4rem;
-  background-image: linear-gradient(to right, rgb(202, 235, 198), rgb(216, 227, 247));
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  margin: 1rem;
+  background-image: linear-gradient(to left, rgb(149, 240, 149), rgba(144, 206, 247, 0.637));
 }
 
 section p span {
-  border: 0.1rem solid black;
+  border: 1px solid black;
   background-color: rgb(205, 213, 219);
-  padding: 0.3rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-.barraLateral {
-  display: grid;
-  flex-direction: column;
-  justify-items: center;
-  justify-content: space-evenly;
-  background-color: rgb(202, 199, 199);
-  border: 0.3rem solid black;
-  border-radius: 1rem;
-  margin: 0rem 3rem 7rem auto;
-  padding: 0.2rem;
-}
-.barraLateral li {
-  justify-content: center;
-  font-size: 120%;
-  padding: 1rem;
 }
 
 /*contacto*/
@@ -211,11 +184,13 @@ legend {
 
 #estilo_articulos {
   padding: 1rem;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   justify-self: center;
+  align-items: center;
+  align-self: center;
 }
 #estilo_articulos img {
   max-width: 90%;
@@ -235,34 +210,31 @@ legend {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: black;
   margin: 1rem;
-  height: 3rem;
-}
-.nav .redesSociales {
-  display: flex;
-  color: aliceblue;
-}
-.nav .redesSociales p {
-  margin-top: 1.5rem;
-}
-.nav .redesSociales .iconosRedes {
-  justify-self: flex-end;
-  align-self: flex-end;
-}
-.nav .redesSociales .iconosRedes img {
-  margin-left: 1rem;
-}
-.nav .seccionNav {
+  height: 2rem;
   display: flex;
   flex-direction: row;
 }
-.nav .seccionNav a {
+.nav a {
+  align-self: center;
   margin: 1rem;
   color: aliceblue;
   font-size: large;
   text-decoration: none;
+}
+
+.redesSociales {
+  display: flex;
+  color: aliceblue;
+}
+.redesSociales .iconosRedes {
+  justify-self: center;
+  align-self: center;
+}
+.redesSociales .iconosRedes img {
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 740px) {
@@ -273,6 +245,23 @@ legend {
   .descripcion__sitio {
     text-align: center;
     font-size: 80%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+  }
+  .nav a {
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin: 0;
   }
 
   .titulo__seccion {
@@ -301,6 +290,9 @@ legend {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     max-height: 100%;
     max-width: 100%;
+  }
+  .redesSociales p {
+    color: black;
   }
 
   header div a img {
@@ -365,10 +357,6 @@ legend {
     max-width: 80%;
   }
 
-  footer {
-    background-color: rgb(105, 126, 145);
-  }
-
   .buscado {
     display: flex;
     justify-content: center;
@@ -428,8 +416,6 @@ legend {
   .articulos img {
     max-width: 60%;
     max-height: 60%;
-    justify-content: center;
-    justify-items: center;
   }
 
   section p {
@@ -467,16 +453,33 @@ legend {
   }
 
   footer {
-    padding: 0;
-    margin: 1rem;
-    display: flex;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    background-image: linear-gradient(to left, rgb(243, 64, 64), white);
     border: 0.1rem solid black;
+    grid-template-areas: "elementos ubicacion" "elementos2 ubicacion";
+  }
+
+  .elementos_footer {
+    grid-area: elementos;
+  }
+
+  .elementos_footer2 {
+    grid-area: elementos2;
   }
 
   .ubicacion {
-    font-weight: bold;
-    font-size: 130%;
-    padding: 0;
+    grid-area: ubicacion;
+  }
+  .ubicacion .estilo_ubicacion {
+    font-size: medium;
+    font-weight: normal;
+    margin: 10px;
   }
 
   #grad {

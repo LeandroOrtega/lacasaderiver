@@ -6,6 +6,22 @@
     text-align: center;
     font-size: 80%;
   }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+    a {
+      width: 100%;
+      border: 1px solid white;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      justify-self: center;
+      margin: 0;
+    }
+  }
   .titulo__seccion {
     display: flex;
     flex-direction: row;
@@ -30,6 +46,9 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     max-height: 100%;
     max-width: 100%;
+    p {
+      color: black;
+    }
   }
   header div a img {
     max-height: 40%;
@@ -88,9 +107,6 @@
   .logo img {
     max-width: 80%;
   }
-  footer {
-    background-color: rgb(105, 126, 145);
-  }
   .buscado {
     display: flex;
     justify-content: center;
@@ -142,8 +158,6 @@
   .articulos img {
     max-width: 60%;
     max-height: 60%;
-    justify-content: center;
-    justify-items: center;
   }
 
   section p {
@@ -177,15 +191,32 @@
     grid-template-columns: 3fr 1fr;
   }
   footer {
-    padding: 0;
-    margin: 1rem;
-    display: flex;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    background-image: linear-gradient(to left, rgb(243, 64, 64), white);
     border: 0.1rem solid black;
+    grid-template-areas:
+      "elementos ubicacion"
+      "elementos2 ubicacion";
+  }
+  .elementos_footer {
+    grid-area: elementos;
+  }
+  .elementos_footer2 {
+    grid-area: elementos2;
   }
   .ubicacion {
-    font-weight: bold;
-    font-size: 130%;
-    padding: 0;
+    grid-area: ubicacion;
+    .estilo_ubicacion {
+      font-size: medium;
+      font-weight: normal;
+      margin: 10px;
+    }
   }
   #grad {
     display: flex;
