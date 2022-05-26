@@ -158,7 +158,7 @@ legend {
   display: flex;
   justify-content: space-evenly;
   background-color: black;
-  margin: 1rem;
+  margin: 5px;
   height: 2rem;
   display: flex;
   flex-direction: row;
@@ -172,7 +172,13 @@ legend {
 }
 .redesSociales {
   display: flex;
-  color: aliceblue;
+  color: black;
+  justify-content: flex-end;
+  margin-right: 5px;
+  padding: 0;
+  p {
+    font-weight: bolder;
+  }
   .iconosRedes {
     justify-self: center;
     align-self: center;
@@ -180,5 +186,37 @@ legend {
       margin-left: 1rem;
     }
   }
+}
+.seccion {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+  img {
+    max-width: 100%;
+    animation-name: imgDamas;
+    animation-duration: 2s;
+  }
+  h1 {
+    background-color: $colorUno;
+    color: white;
+    text-align: center;
+    animation-name: txtDamas;
+    animation-duration: 2s;
+  }
+}
+
+@keyframes imgDamas {
+  0% {
+    transform: translateX(250px);
+  }
+}
+@keyframes txtDamas {
+  0% {
+    transform: translateX(-250px);
+  }
+}
+.seccionNiños {
+  display: flex;
 }
 @import "media";

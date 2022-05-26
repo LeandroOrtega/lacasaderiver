@@ -47,7 +47,7 @@
     max-height: 100%;
     max-width: 100%;
     p {
-      color: blue;
+      color: black;
     }
   }
   header div a img {
@@ -285,6 +285,10 @@
       font-size: 70%;
       width: 50%;
     }
+  }
+  /*mediaDamas*/
+  .headDamas {
+    display: none;
   }
 }
 @media screen and(min-width:741px) and (max-width: 900px) {

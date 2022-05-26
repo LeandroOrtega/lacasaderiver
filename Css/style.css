@@ -212,7 +212,7 @@ legend {
   display: flex;
   justify-content: space-evenly;
   background-color: black;
-  margin: 1rem;
+  margin: 5px;
   height: 2rem;
   display: flex;
   flex-direction: row;
@@ -227,7 +227,13 @@ legend {
 
 .redesSociales {
   display: flex;
-  color: aliceblue;
+  color: black;
+  justify-content: flex-end;
+  margin-right: 5px;
+  padding: 0;
+}
+.redesSociales p {
+  font-weight: bolder;
 }
 .redesSociales .iconosRedes {
   justify-self: center;
@@ -235,6 +241,39 @@ legend {
 }
 .redesSociales .iconosRedes img {
   margin-left: 1rem;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+}
+.seccion img {
+  max-width: 100%;
+  animation-name: imgDamas;
+  animation-duration: 2s;
+}
+.seccion h1 {
+  background-color: rgb(236, 46, 46);
+  color: white;
+  text-align: center;
+  animation-name: txtDamas;
+  animation-duration: 2s;
+}
+
+@keyframes imgDamas {
+  0% {
+    transform: translateX(250px);
+  }
+}
+@keyframes txtDamas {
+  0% {
+    transform: translateX(-250px);
+  }
+}
+.seccionNiños {
+  display: flex;
 }
 
 @media screen and (max-width: 740px) {
@@ -292,7 +331,7 @@ legend {
     max-width: 100%;
   }
   .redesSociales p {
-    color: blue;
+    color: black;
   }
 
   header div a img {
@@ -553,6 +592,11 @@ legend {
     margin: 20px;
     font-size: 70%;
     width: 50%;
+  }
+
+  /*mediaDamas*/
+  .headDamas {
+    display: none;
   }
 }
 @media screen and (min-width: 741px) and (max-width: 900px) {
