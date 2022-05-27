@@ -1,7 +1,13 @@
-.head {
+@mixin head {
   display: flex;
   justify-content: center;
   img {
     max-width: 100%;
   }
+}
+.head {
+  @include head;
+}
+.headSecciones {
+  @include head;
 }

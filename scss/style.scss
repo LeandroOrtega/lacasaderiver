@@ -93,6 +93,21 @@ section p span {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.articulosMujer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  margin: 1rem 0;
+  background-image: linear-gradient(
+    to left,
+    rgb(238, 189, 97),
+    rgb(189, 230, 77)
+  );
+  img {
+    border: solid;
+  }
+}
 /*contacto*/
 .nav_contacto {
   display: flex;
@@ -174,7 +189,7 @@ legend {
   display: flex;
   color: black;
   justify-content: flex-end;
-  margin-right: 5px;
+  margin-right: 1rem;
   padding: 0;
   p {
     font-weight: bolder;
@@ -202,7 +217,7 @@ legend {
     color: white;
     text-align: center;
     animation-name: txtDamas;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
 }
 
@@ -218,5 +233,24 @@ legend {
 }
 .seccionNiños {
   display: flex;
+  justify-content: space-around;
+  .niños {
+    margin: 20px;
+    max-width: 100%;
+    animation-name: movNiños;
+    animation-duration: 2s;
+  }
+  .niñas {
+    margin: 20px;
+    max-width: 100%;
+    animation-name: movNiños;
+    animation-duration: 2s;
+  }
 }
+@keyframes movNiños {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+
 @import "media";
