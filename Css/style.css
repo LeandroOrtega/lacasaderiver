@@ -199,7 +199,7 @@ form {
   flex-direction: column;
   background-color: rgb(31, 29, 29);
   justify-content: center;
-  width: 800px;
+  width: 750px;
 }
 .formulario label {
   color: white;
@@ -375,7 +375,7 @@ legend {
     display: flex;
     justify-content: center;
     padding: 0;
-    margin: 0;
+    margin: 5px;
     width: 100%;
     color: white;
     background-color: rgb(236, 46, 46);
@@ -401,16 +401,18 @@ legend {
     display: flex;
   }
 
-  .articulos div {
+  .articulos {
     border: solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     justify-self: center;
-    margin: 0.1rem;
+    margin: 5px;
+    background-color: rgb(236, 46, 46);
+    max-width: 100%;
   }
-  .articulos div img {
+  .articulos img {
     max-width: 60%;
     max-height: 60%;
     align-self: center;
@@ -423,8 +425,9 @@ legend {
     justify-content: center;
     justify-items: center;
     justify-self: center;
-    margin: 0.1rem;
+    margin: 5px;
     background-image: linear-gradient(to left, rgb(149, 240, 149), rgba(144, 206, 247, 0.637));
+    max-width: 100%;
   }
   .articulos_niños img {
     max-width: 60%;
@@ -439,8 +442,9 @@ legend {
     justify-content: center;
     justify-items: center;
     justify-self: center;
-    margin: 0.1rem;
+    margin: 5px;
     background-image: linear-gradient(to left, rgb(250, 185, 87), rgb(212, 250, 108));
+    max-width: 100%;
   }
   .articulosDamas img {
     max-width: 60%;
@@ -455,8 +459,9 @@ legend {
     justify-content: center;
     justify-items: center;
     justify-self: center;
-    margin: 0.1rem;
+    margin: 5px;
     background-image: linear-gradient(to left, rgb(36, 13, 12), rgb(104, 153, 243));
+    max-width: 100%;
   }
   .articulosHombre img {
     max-width: 60%;
@@ -505,18 +510,6 @@ legend {
     grid-gap: 2rem;
   }
 
-  .div_ingreso {
-    display: flex;
-    justify-content: end;
-  }
-
-  .ingreso {
-    color: rgb(223, 116, 116);
-    border-radius: 0.5rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    padding: 0;
-  }
-
   .seccionesVenta {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 80%;
@@ -526,11 +519,6 @@ legend {
     justify-content: space-evenly;
     align-items: center;
     margin: 1rem;
-  }
-
-  .seccionesVenta a {
-    text-decoration: none;
-    color: rgb(235, 63, 63);
   }
 
   .articulos {
@@ -578,14 +566,14 @@ legend {
   }
 
   footer {
-    padding: 10px;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-    background-image: linear-gradient(to left, rgb(243, 64, 64), white);
+    grid-gap: 5px;
+    background-image: linear-gradient(to left, rgb(236, 46, 46), white);
     border: 0.1rem solid black;
     grid-template-areas: "elementos ubicacion" "elementos2 ubicacion";
   }
@@ -604,7 +592,7 @@ legend {
   .ubicacion .estilo_ubicacion {
     font-size: medium;
     font-weight: normal;
-    margin: 10px;
+    margin: 5px;
   }
 
   #grad {
