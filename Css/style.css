@@ -424,6 +424,7 @@ legend {
     justify-items: center;
     justify-self: center;
     margin: 0.1rem;
+    background-image: linear-gradient(to left, rgb(149, 240, 149), rgba(144, 206, 247, 0.637));
   }
   .articulos_niños img {
     max-width: 60%;
@@ -439,6 +440,7 @@ legend {
     justify-items: center;
     justify-self: center;
     margin: 0.1rem;
+    background-image: linear-gradient(to left, rgb(250, 185, 87), rgb(212, 250, 108));
   }
   .articulosDamas img {
     max-width: 60%;
@@ -454,6 +456,7 @@ legend {
     justify-items: center;
     justify-self: center;
     margin: 0.1rem;
+    background-image: linear-gradient(to left, rgb(36, 13, 12), rgb(104, 153, 243));
   }
   .articulosHombre img {
     max-width: 60%;
