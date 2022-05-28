@@ -1,3 +1,18 @@
+@mixin art {
+  border: solid;
+  background-color: rgb(165, 187, 187);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin: 0.1rem;
+  img {
+    max-width: 60%;
+    max-height: 60%;
+    align-self: center;
+  }
+}
 @media screen and (max-width: 740px) {
   * {
     max-width: 50vh;
@@ -24,21 +39,13 @@
   }
   .titulo__seccion {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    justify-self: flex-end;
-    align-self: flex-end;
-    align-content: flex-end;
-    margin: 0.2rem;
-    max-width: 90%;
-  }
-  .titulo__seccion p {
-    color: white;
-    background-color: rgb(236, 46, 46);
-    padding: 1rem;
-    padding: 0.1rem;
+    padding: 0;
     margin: 0;
-    font-size: 60%;
+    width: 100%;
+    color: white;
+    background-color: $colorUno;
+    font-size: 120%;
   }
   .redesSociales {
     display: flex;
@@ -57,38 +64,16 @@
     display: flex;
   }
   .articulos div {
-    border: solid;
-    background-color: rgb(165, 187, 187);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    margin: 0.1rem;
-    img {
-      max-width: 60%;
-      max-height: 60%;
-      align-self: center;
-    }
+    @include art;
   }
-  .articulos #estilo_articulos2 {
-    border: solid;
-    background-image: linear-gradient(
-      to left,
-      rgb(149, 240, 149),
-      rgba(144, 206, 247, 0.637)
-    );
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    margin: 0.1rem;
-    img {
-      max-width: 60%;
-      max-height: 60%;
-      align-self: center;
-    }
+  .articulos_niños {
+    @include art;
+  }
+  .articulosDamas {
+    @include art;
+  }
+  .articulosHombre {
+    @include art;
   }
   .corto {
     border: solid;
@@ -96,9 +81,7 @@
   .buzo {
     border: solid;
   }
-  .chomba {
-    border: solid;
-  }
+
   .logo {
     display: flex;
     justify-content: center;
@@ -240,6 +223,7 @@
     flex-direction: column;
     background-color: rgb(31, 29, 29);
     justify-content: center;
+    max-width: 100%;
     label {
       color: rgb(252, 250, 247);
     }
@@ -265,7 +249,7 @@
     width: 20rem;
     height: 30rem;
     justify-content: space-between;
-    background-color: rgb(252, 143, 41);
+    background-color: $colorTarjeta;
     justify-content: center;
     margin: auto;
 
@@ -289,6 +273,9 @@
   /*mediaDamas*/
   .headSecciones {
     display: none;
+  }
+  .niños {
+    width: 100%;
   }
   .niñas {
     display: none;

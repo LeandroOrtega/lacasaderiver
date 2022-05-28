@@ -141,6 +141,9 @@ body {
   margin: 1rem;
   background-image: linear-gradient(to left, rgb(149, 240, 149), rgba(144, 206, 247, 0.637));
 }
+.articulos_niños img {
+  border: solid;
+}
 
 section p span {
   border: 1px solid black;
@@ -148,15 +151,27 @@ section p span {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.articulosMujer {
+.articulosDamas {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr 2fr;
   margin: 1rem 0;
-  background-image: linear-gradient(to left, rgb(238, 189, 97), rgb(189, 230, 77));
+  background-image: linear-gradient(to left, rgb(250, 185, 87), rgb(212, 250, 108));
 }
-.articulosMujer img {
+.articulosDamas img {
+  border: solid;
+}
+
+.articulosHombre {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  margin: 1rem 0;
+  background-image: linear-gradient(to left, rgb(36, 13, 12), rgb(104, 153, 243));
+}
+.articulosHombre img {
   border: solid;
 }
 
@@ -184,10 +199,11 @@ form {
   flex-direction: column;
   background-color: rgb(31, 29, 29);
   justify-content: center;
-  width: 30rem;
+  width: 800px;
 }
 .formulario label {
   color: white;
+  font-size: larger;
 }
 .formulario div {
   color: rgb(236, 206, 165);
@@ -292,19 +308,33 @@ legend {
     transform: translateX(-250px);
   }
 }
+.seccion_niños {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+}
+.seccion_niños h1 {
+  background-color: rgb(236, 46, 46);
+  color: white;
+  text-align: center;
+  animation-name: txtDamas;
+  animation-duration: 2s;
+}
+
 .seccionNiños {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .seccionNiños .niños {
   margin: 20px;
-  max-width: 100%;
+  max-width: 350px;
   animation-name: movNiños;
   animation-duration: 2s;
 }
 .seccionNiños .niñas {
   margin: 20px;
-  max-width: 100%;
+  max-width: 350px;
   animation-name: movNiños;
   animation-duration: 2s;
 }
@@ -343,22 +373,13 @@ legend {
 
   .titulo__seccion {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    justify-self: flex-end;
-    align-self: flex-end;
-    align-content: flex-end;
-    margin: 0.2rem;
-    max-width: 90%;
-  }
-
-  .titulo__seccion p {
+    padding: 0;
+    margin: 0;
+    width: 100%;
     color: white;
     background-color: rgb(236, 46, 46);
-    padding: 1rem;
-    padding: 0.1rem;
-    margin: 0;
-    font-size: 60%;
+    font-size: 120%;
   }
 
   .redesSociales {
@@ -396,9 +417,9 @@ legend {
     align-self: center;
   }
 
-  .articulos #estilo_articulos2 {
+  .articulos_niños {
     border: solid;
-    background-image: linear-gradient(to left, rgb(149, 240, 149), rgba(144, 206, 247, 0.637));
+    background-color: rgb(165, 187, 187);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -406,7 +427,39 @@ legend {
     justify-self: center;
     margin: 0.1rem;
   }
-  .articulos #estilo_articulos2 img {
+  .articulos_niños img {
+    max-width: 60%;
+    max-height: 60%;
+    align-self: center;
+  }
+
+  .articulosDamas {
+    border: solid;
+    background-color: rgb(165, 187, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0.1rem;
+  }
+  .articulosDamas img {
+    max-width: 60%;
+    max-height: 60%;
+    align-self: center;
+  }
+
+  .articulosHombre {
+    border: solid;
+    background-color: rgb(165, 187, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0.1rem;
+  }
+  .articulosHombre img {
     max-width: 60%;
     max-height: 60%;
     align-self: center;
@@ -417,10 +470,6 @@ legend {
   }
 
   .buzo {
-    border: solid;
-  }
-
-  .chomba {
     border: solid;
   }
 
@@ -584,6 +633,7 @@ legend {
     flex-direction: column;
     background-color: rgb(31, 29, 29);
     justify-content: center;
+    max-width: 100%;
   }
   .formulario label {
     color: rgb(252, 250, 247);
@@ -611,7 +661,7 @@ legend {
     width: 20rem;
     height: 30rem;
     justify-content: space-between;
-    background-color: rgb(252, 143, 41);
+    background-color: rgba(184, 218, 250, 0.61);
     justify-content: center;
     margin: auto;
   }
@@ -635,6 +685,10 @@ legend {
   /*mediaDamas*/
   .headSecciones {
     display: none;
+  }
+
+  .niños {
+    width: 100%;
   }
 
   .niñas {
